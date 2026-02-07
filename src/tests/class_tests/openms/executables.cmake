@@ -454,6 +454,7 @@ set(analysis_executables_list
   BasicProteinInferenceAlgorithm_test
   BayesianProteinInferenceAlgorithm_test
   ClusterProxyKD_test
+  CometModification_test
   ConfidenceScoring_test
   ConsensusIDAlgorithmAverage_test
   ConsensusIDAlgorithmBest_test
@@ -642,6 +643,7 @@ if(NOT DISABLE_OPENSWATH)
     TargetedSpectraExtractor_test
     OpenSwathSpectrumAccessOpenMS_test
     OpenSwathDataAccessHelper_test
+    CalibrationWorkflow_test
     MasstraceCorrelator_test
     MRMBatchFeatureSelector_test
     MRMFeatureScoring_test
