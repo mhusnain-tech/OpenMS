@@ -28,6 +28,7 @@ cdef extern from "<OpenMS/KERNEL/SpectrumRangeManager.h>" namespace "OpenMS":
         
         void clearRanges() except + nogil
         libcpp_set[UInt] getMSLevels() except + nogil
+        SpectrumRangeManager byMSLevel(int ms_level) except + nogil
         void extendRT(double rt, UInt ms_level) except + nogil
         void extendMZ(double mz, UInt ms_level) except + nogil
         void extendUnsafe(const MSSpectrum& spectrum, UInt ms_level) except + nogil
